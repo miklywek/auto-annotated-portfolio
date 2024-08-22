@@ -41,27 +41,7 @@ const BaseLayout: React.FC<BaseLayoutProps> = (props) => {
                
           
                 <script async src="https://stage-widget.intelswift.com/script.js?tenantId=0dbc214e-98bd-4e98-9b9f-758955b39217&botId=66c3453cf32ae3ba8b125d49&end=true"></script>
-                <script>
-                    window.onload = (event) => {
-                        const propsInterval = setInterval(widgetTimer, 1000);
-
-                        function widgetTimer() {
-                        const tenantId = localStorage.getItem("tenantId")
-                        const botId = localStorage.getItem("botId")
-						const host = window.location.hostname
-
-                        if((tenantId && tenantId != "undefined") && (botId && botId != "undefined") && (host && host != "undefined")){
-                            clearInterval(propsInterval);
-                            document.getElementById("iframeWidgetContainer").contentWindow.postMessage( 
-                            {
-                                tenantId: tenantId,
-                                botId: botId,
-                                host: host
-                            },"*")
-                        }
-                        }
-                    };
-                </script>
+         
                 
                         
                     </Head>
