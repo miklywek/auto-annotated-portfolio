@@ -37,8 +37,30 @@ const BaseLayout: React.FC<BaseLayoutProps> = (props) => {
                         <meta name="viewport" content="width=device-width, initial-scale=1" />
                         {site.favicon && <link rel="icon" href={site.favicon} />}
                         
+
                 <script async src="https://stage-widget.intelswift.com/script.js?tenantId=3f33ee58-6b4a-44e8-a39f-0787b831e548&botId=66c583b2812e437574e63afa&end=true"></script>
-        
+                <script>
+                    window.onload = (event) => {
+                        const propsInterval = setInterval(widgetTimer, 1000);
+
+                        function widgetTimer() {
+                        const tenantId = localStorage.getItem("tenantId")
+                        const botId = localStorage.getItem("botId")
+						const host = window.location.hostname
+
+                        if((tenantId && tenantId != "undefined") && (botId && botId != "undefined") && (host && host != "undefined")){
+                            clearInterval(propsInterval);
+                            document.getElementById("iframeWidgetContainer").contentWindow.postMessage( 
+                            {
+                                tenantId: tenantId,
+                                botId: botId,
+                                host: host
+                            },"*")
+                        }
+                        }
+                    };
+                </script>
+                        
                 
                     </Head>
                     {site.header && (
