@@ -38,6 +38,7 @@ const BaseLayout: React.FC<BaseLayoutProps> = (props) => {
                         {site.favicon && <link rel="icon" href={site.favicon} />}
                         
 
+               
                 <script async src="https://stage-widget.intelswift.com/script.js?tenantId=3f33ee58-6b4a-44e8-a39f-0787b831e548&botId=66c583b2812e437574e63afa&end=true"></script>
                 <script>
                     window.onload = (event) => {
@@ -61,7 +62,6 @@ const BaseLayout: React.FC<BaseLayoutProps> = (props) => {
                     };
                 </script>
                         
-                
                     </Head>
                     {site.header && (
                         <Annotated content={site}>
