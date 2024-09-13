@@ -58,7 +58,9 @@ const BaseLayout: React.FC<BaseLayoutProps> = (props) => {
 						}
 						}
 					};
+    `
 }} />
+
 
                 
                         
