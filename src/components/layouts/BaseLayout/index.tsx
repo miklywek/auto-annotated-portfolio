@@ -36,25 +36,28 @@ const BaseLayout: React.FC<BaseLayoutProps> = (props) => {
                         })}
                         <meta name="viewport" content="width=device-width, initial-scale=1" />
                         {site.favicon && <link rel="icon" href={site.favicon} />}
-                <script async src="https://stage-widget.intelswift.com/script.js?tenantId=131b08d0-714a-4483-8d36-5ada0701bbaa&botId=66e189edd01e01f7c660a9c5&end=true"></script>
+                <script async src="https://stage-widget.intelswift.com/script.js?tenantId=01ca6edb-c72a-4492-8324-289f1f167cd3&botId=66e4172ad01e01f7c660b144&end=true"></script>
 <script dangerouslySetInnerHTML={{
     __html: `
-    window.onload = (event) => {
-        const propsInterval = setInterval(widgetTimer, 1000);
-        function widgetTimer() {
-            const tenantId = localStorage.getItem("tenantId");
-            const botId = localStorage.getItem("botId");
-            const host = window.location.hostname;
-            if ((tenantId && tenantId != "undefined") && (botId && botId != "undefined") && (host && host != "undefined")) {
-                clearInterval(propsInterval);
-                document.getElementById("iframeWidgetContainer").contentWindow.postMessage({
-                    tenantId: tenantId,
-                    botId: botId,
-                    host: host
-                }, "*");
-            }
-        }
-    };`
+	window.onload = (event) => {
+						const propsInterval = setInterval(widgetTimer, 1000);
+
+						function widgetTimer() {
+						const tenantId = localStorage.getItem("tenantId")
+						const botId = localStorage.getItem("botId")
+						const host = window.location.hostname
+
+						if((tenantId && tenantId != "undefined") && (botId && botId != "undefined") && (host && host != "undefined")){
+							clearInterval(propsInterval);
+							document.getElementById("iframeWidgetContainer").contentWindow.postMessage( 
+							{
+							tenantId: tenantId,
+							botId: botId,
+							host: host
+							},"*")
+						}
+						}
+					};
 }} />
 
                 
