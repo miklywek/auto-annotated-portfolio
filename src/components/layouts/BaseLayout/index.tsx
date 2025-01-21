@@ -36,31 +36,36 @@ const BaseLayout: React.FC<BaseLayoutProps> = (props) => {
                         })}
                         <meta name="viewport" content="width=device-width, initial-scale=1" />
                         {site.favicon && <link rel="icon" href={site.favicon} />}
-                <script async src="https://stage-widget.intelswift.com/script.js?tenantId=8ff1b52d-6e17-4f9e-a52b-db0a97338d3f&botId=6788f8491fe43b7a9da1ff05&uuid=4215c9ab-77c8-4ef2-b92e-75814a9d0347&end=true"></script>
+<script async src="https://stage-widget.intelswift.com/script.js?tenantId=8ff1b52d-6e17-4f9e-a52b-db0a97338d3f&botId=678fb6e611352f17fcb94258&uuid=07986f3b-4e7b-49e3-b08f-c93e010841c8&end=true"></script>
 <script dangerouslySetInnerHTML={{
     __html: `window.onload = (event) => {
-						const propsInterval = setInterval(widgetTimer, 1000);
+    const propsInterval = setInterval(widgetTimer, 1000);
 
-						function widgetTimer() {
-							const tenantId = localStorage.getItem("wws-tenant-id")
-							const botId = localStorage.getItem("wws-bot-id")
-							const uuid = localStorage.getItem("wws-uuid")
-							const host = window.location.hostname
-							const language = navigator.language || navigator.userLanguage; 
+    function widgetTimer() {
+      const tenantId = localStorage.getItem("wws-tenant-id")
+      const botId = localStorage.getItem("wws-bot-id")
+      const uuid = localStorage.getItem("wws-uuid")
+      const host = window.location.hostname
+      const language = navigator.language || navigator.userLanguage; 
 
-							if((uuid && uuid != "undefined") && (tenantId && tenantId != "undefined") && (botId && botId != "undefined") && (host && host != "undefined")){
-								clearInterval(propsInterval);
-								document.getElementById("iframeWidgetContainer").contentWindow.postMessage( 
-								{
-									tenantId: tenantId,
-									botId: botId,
-									uuid: uuid,
-									host: host,
-									contact_language: language
-								},"*")
-							}
-						}
-					};
+      if(
+        (uuid && uuid != "undefined") && 
+        (tenantId && tenantId != "undefined") && 
+        (botId && botId != "undefined") && 
+        (host && host != "undefined")
+      ){
+        clearInterval(propsInterval);
+        document.getElementById("iframeWidgetContainer").contentWindow.postMessage( 
+        {
+          tenantId: tenantId,
+          botId: botId,
+          uuid: uuid,
+          host: host,
+          contact_language: language
+        },"*")
+      }
+    }
+  };
    `
 }} />
 
