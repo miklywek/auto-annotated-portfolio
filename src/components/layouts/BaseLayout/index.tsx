@@ -36,40 +36,38 @@ const BaseLayout: React.FC<BaseLayoutProps> = (props) => {
                         })}
                         <meta name="viewport" content="width=device-width, initial-scale=1" />
                         {site.favicon && <link rel="icon" href={site.favicon} />}
-<script async src="https://widget.intelswift.com/script.js?tenantId=5b08d122-fffb-464f-bd18-4d4af601b83f&botId=67a5e18dda6a71963831716c&uuid=ce79a705-f5f9-4ca4-becc-a3ca40d63434&end=true"></script>
+<script async src="https://stage-widget.intelswift.com/script.js?tenantId=583c1372-0343-4b42-b0df-7da507e7d399&botId=67ab471a22992e43afe49159&uuid=55277f5b-5df3-4e33-9493-dea0d9a4afae&end=true"></script>
 <script
   dangerouslySetInnerHTML={{
     __html: `
-      window.onload = (event) => {
-        const propsInterval = setInterval(widgetTimer, 1000);
+       window.onload = (event) => {
+    const propsInterval = setInterval(widgetTimer, 1000);
 
-        function widgetTimer() {
-          const tenantId = localStorage.getItem("wws-tenant-id");
-          const botId = localStorage.getItem("wws-bot-id");
-          const uuid = localStorage.getItem("wws-uuid");
-          const host = window.location.hostname;
-          const language = navigator.language || navigator.userLanguage;
+    function widgetTimer() {
+      const tenantId = localStorage.getItem("wws-tenant-id")
+      const botId = localStorage.getItem("wws-bot-id")
+      const uuid = localStorage.getItem("wws-uuid")
+      const host = window.location.hostname
+      const language = navigator.language || navigator.userLanguage; 
 
-          if (
-            (uuid && uuid !== "undefined") &&
-            (tenantId && tenantId !== "undefined") &&
-            (botId && botId !== "undefined") &&
-            (host && host !== "undefined")
-          ) {
-            clearInterval(propsInterval);
-            document.getElementById("iframeWidgetContainer").contentWindow.postMessage(
-              {
-                tenantId: tenantId,
-                botId: botId,
-                uuid: uuid,
-                host: host,
-                contact_language: language
-              },
-              "*"
-            );
-          }
-        }
-      };
+      if(
+        (uuid && uuid != "undefined") && 
+        (tenantId && tenantId != "undefined") && 
+        (botId && botId != "undefined") && 
+        (host && host != "undefined")
+      ){
+        clearInterval(propsInterval);
+        document.getElementById("iframeWidgetContainer").contentWindow.postMessage( 
+        {
+          tenantId: tenantId,
+          botId: botId,
+          uuid: uuid,
+          host: host,
+          contact_language: language
+        },"*")
+      }
+    }
+  };
     `
   }}
 />
