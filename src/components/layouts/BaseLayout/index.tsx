@@ -40,7 +40,7 @@ const BaseLayout: React.FC<BaseLayoutProps> = (props) => {
 <script
   dangerouslySetInnerHTML={{
     __html: `
-       window.onload = (event) => {
+ window.onload = (event) => {
     const propsInterval = setInterval(widgetTimer, 1000);
 
     function widgetTimer() {
