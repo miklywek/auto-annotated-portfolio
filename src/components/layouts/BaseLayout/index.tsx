@@ -37,8 +37,7 @@ const BaseLayout: React.FC<BaseLayoutProps> = (props) => {
                         <meta name="viewport" content="width=device-width, initial-scale=1" />
                         {site.favicon && <link rel="icon" href={site.favicon} />}
 
-<script async src="https://stage-widget.intelswift.com/script.js?tenantId=92f0250b-ea8e-4e54-b91f-f26ba086249a&botId=67b2f7f169e54e4ae6ad20c8&uuid=954edc8c-699f-46fe-b1cb-c7b3e6999580&end=true"></script>                        
-                        
+<script async src="https://stage-widget.intelswift.com/script.js?tenantId=e0e4866d-7885-40d4-9bae-bded6e5e39cf&botId=67b5b663e385c72440a6c4fd&uuid=ae4432a7-1481-4e66-974c-01b667a3b09c&end=true"></script>                        
                         
                         <script
   dangerouslySetInnerHTML={{
