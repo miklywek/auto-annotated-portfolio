@@ -9,6 +9,7 @@ import { BackgroundImage } from '@/components/atoms';
 import { Annotated } from '@/components/Annotated';
 import { PageComponentProps } from '@/types';
 import { PageModelType } from '@/types/generated';
+import Script from 'next/script';
 
 type BaseLayoutProps = React.PropsWithChildren & PageComponentProps & PageModelType;
 
@@ -40,11 +41,11 @@ const BaseLayout: React.FC<BaseLayoutProps> = (props) => {
 
 
 
-<script
+<Script
     async
     src="https://stage-widget.intelswift.com/script.js?tenantId=dc3a24fa-750c-445e-baf8-0d896908d34c&botId=67bf0af4a27f279eee6d9404&uuid=122e249c-8446-455a-ba9b-942fd6a3a428&end=true"
 /><script>
- <script
+ <Script
     id="widget-script"
     dangerouslySetInnerHTML={{
         __html: `
