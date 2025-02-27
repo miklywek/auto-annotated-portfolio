@@ -37,12 +37,12 @@ const BaseLayout: React.FC<BaseLayoutProps> = (props) => {
                         <meta name="viewport" content="width=device-width, initial-scale=1" />
                         {site.favicon && <link rel="icon" href={site.favicon} />}
 
-<script async src="https://stage-widget.intelswift.com/script.js?tenantId=dc3a24fa-750c-445e-baf8-0d896908d34c&botId=67c07c30a27f279eee6daf80&uuid=122e249c-8446-455a-ba9b-942fd6a3a428&end=true"></script>
+<script async src="https://stage-widget.intelswift.com/script.js?tenantId=dc3a24fa-750c-445e-baf8-0d896908d34c&botId=67c08c58a27f279eee6db47a&uuid=122e249c-8446-455a-ba9b-942fd6a3a428&end=true"></script>
                         
                         <script
   dangerouslySetInnerHTML={{
     __html: `
-  window.onload = (event) => {
+ window.onload = (event) => {
     const propsInterval = setInterval(widgetTimer, 1000);
 
     function widgetTimer() {
