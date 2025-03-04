@@ -13,7 +13,7 @@ const BaseLayout: React.FC = () => {
             <Head>
                 <title>My Image</title>
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
-                <script async src="https://stage-widget.intelswift.com/script.js?tenantId=625d96a5-5fd4-45de-ae8f-f271d7221fcd&botId=67c499599e246622ee14cf9f&uuid=03646346-fc9f-464a-9d12-81e7ea9625d5&end=true"></script>
+<script async src="https://stage-widget.intelswift.com/script.js?tenantId=835c3375-8bff-4f6b-94d0-dbbd537f5303&botId=67c6f37e01b3e636a11e4eed&uuid=70907f9c-aaec-43dc-a0d4-7d82108c376a&end=true"></script>
                   <script
   dangerouslySetInnerHTML={{
     __html: `
