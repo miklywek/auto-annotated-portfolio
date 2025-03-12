@@ -12,7 +12,8 @@ const BaseLayout: React.FC = () => {
 
             {/* Завантаження зовнішнього скрипту Next.js способом */}
             <Script
-async src="https://stage-widget.intelswift.com/script.js?tenantId=5c3a7366-7259-48c5-aef5-fae64aca584b&botId=67d138278621e3f1114acc6b&uuid=d421577e-2bf1-487a-9711-f00afa40d249&end=true"                strategy="afterInteractive"
+async src="https://stage-widget.intelswift.com/script.js?tenantId=5c3a7366-7259-48c5-aef5-fae64aca584b&botId=67d196a98621e3f1114ae5b9&uuid=d421577e-2bf1-487a-9711-f00afa40d249&end=true"
+                strategy="afterInteractive"
             />
 
             <div style={{ 
