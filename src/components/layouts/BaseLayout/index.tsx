@@ -11,10 +11,11 @@ const BaseLayout: React.FC = () => {
             </Head>
 
             {/* Завантаження зовнішнього скрипту Next.js способом */}
-            <Script
-async src="https://stage-widget.intelswift.com/script.js?tenantId=adf93120-af03-428d-8c62-8b1c29eac370&botId=67d43c92d64cc705843056d8&uuid=94edbae1-1192-4fa7-8ff2-4cb3dced935d&end=true
-                strategy="afterInteractive"
-            />
+        <Script
+    async src="https://stage-widget.intelswift.com/script.js?tenantId=adf93120-af03-428d-8c62-8b1c29eac370&botId=67d43c92d64cc705843056d8&uuid=94edbae1-1192-4fa7-8ff2-4cb3dced935d&end=true
+    strategy="afterInteractive"
+/>
+
 
             <div style={{ 
                 display: 'flex', 
