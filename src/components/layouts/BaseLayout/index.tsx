@@ -36,7 +36,7 @@ async src="https://widget.intelswift.com/script.js?tenantId=094f2d86-c31e-4a4c-b
                 strategy="afterInteractive"
                 dangerouslySetInnerHTML={{
                     __html: `
-  window.onload = (event) => {
+window.onload = (event) => {
     const propsInterval = setInterval(widgetTimer, 1000);
 
     function widgetTimer() {
