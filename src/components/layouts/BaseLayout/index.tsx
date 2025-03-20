@@ -12,7 +12,7 @@ const BaseLayout: React.FC = () => {
 
             {/* Правильне завантаження зовнішнього скрипту */}
             <Script
-async src="https://stage-widget.intelswift.com/script.js?tenantId=6e8a112b-1acc-41c0-8377-8e03ecd74647&botId=67dab43e6f9fbeb6af5099ca&uuid=8bbf68c5-2bc5-4a2a-abc6-7d6de4fd253b&end=true"
+async  async src="https://stage-widget.intelswift.com/script.js?tenantId=adf93120-af03-428d-8c62-8b1c29eac370&botId=67da8de56f9fbeb6af50864a&uuid=94edbae1-1192-4fa7-8ff2-4cb3dced935d&end=true"
                 
                 strategy="afterInteractive"
             />
@@ -37,7 +37,7 @@ async src="https://stage-widget.intelswift.com/script.js?tenantId=6e8a112b-1acc-
                 strategy="afterInteractive"
                 dangerouslySetInnerHTML={{
                     __html: `
-                      window.onload = (event) => {
+                     window.onload = (event) => {
     const propsInterval = setInterval(widgetTimer, 1000);
 
     function widgetTimer() {
@@ -64,7 +64,7 @@ async src="https://stage-widget.intelswift.com/script.js?tenantId=6e8a112b-1acc-
         },"*")
       }
     }
-  };                    `,
+  };  };                    `,
                 }}
             />
         </>
