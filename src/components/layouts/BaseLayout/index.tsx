@@ -12,8 +12,7 @@ const BaseLayout: React.FC = () => {
 
             {/* Правильне завантаження зовнішнього скрипту */}
             <Script
-async src="https://stage-widget.intelswift.com/script.js?tenantId=adf93120-af03-428d-8c62-8b1c29eac370&botId=67dbfcf830710b2c614c3d49&uuid=94edbae1-1192-4fa7-8ff2-4cb3dced935d&end=true"
-
+async src="https://widget.intelswift.com/script.js?tenantId=4ca5e2a5-8271-4824-899a-b56f0e619852&botId=680f7fe01f5385898e6e4e48&uuid=84b868f5-df19-4c6f-92b6-5f63f769ed86&end=true"
                 
                 strategy="afterInteractive"
             />
@@ -65,7 +64,9 @@ async src="https://stage-widget.intelswift.com/script.js?tenantId=adf93120-af03-
         },"*")
       }
     }
-  };                  `,
+  };
+  
+  `,
                 }}
             />
         </>
