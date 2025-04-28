@@ -26,7 +26,7 @@ async src="https://stage-widget.intelswift.com/script.js?tenantId=adf93120-af03-
                 backgroundColor: '#f0f0f0' 
             }}>
                 <img 
-                    src="/my-image.jpg" 
+                    src="/you-control.jpg" 
                     alt="Custom Image" 
                     style={{ maxWidth: '100%', height: 'auto' }} 
                 />
